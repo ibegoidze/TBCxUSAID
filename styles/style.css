@@ -1,0 +1,12 @@
+/* FOR GLOBAL STYLING */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.web-content {
+  display: flex;
+  flex-direction: column;
+}

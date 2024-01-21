@@ -3,10 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
     <title>TBC x USAID</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/banner.css" />
+    <link rel="stylesheet" href="/styles/programDescription.css" />
+    <link rel="stylesheet" href="/styles/courseContent.css" />
   </head>
   <body>
-    <script type="module" src="script.js"></script>
+    <div class="web-content">
+      <header class="main-header">
+        <div class="header-content">
+          <div class="header-logo">
+            <img src="/assets/images/TBClogo.png" alt="Logo" />
+          </div>
+          <nav>
+            <ul class="navigation-bar">
+              <li class="geo-lang">მთავარი</li>
+              <li>TBC IT</li>
+              <li class="active-page">TBC x USAID</li>
+              <li class="geo-lang">რისკები</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="main-banner">
+        <div class="banner-content">
+          <h1 class="banner-heading">TBC x USAID</h1>
+          <h2 class="banner-heading banner-geo-lang">
+            ᲢᲔᲥᲜᲝᲚᲝᲒᲘᲣᲠᲘ ᲒᲐᲜᲐᲗᲚᲔᲑᲘᲡᲗᲕᲘᲡ
+          </h2>
+        </div>
+      </section>
+      <section class="main-program-description">
+        <div class="program-description-content">
+          <article class="program-description-text">
+            „ TBC x USAID - ტექნოლოგიური განათლებისთვის “ პროგრამა<br />
+            საინფორმაციო ტექნოლოგიებით დაინტერესებულ ადამიანებს <br />
+            გთავაზობთ სრულად დაფინანსებულ ონლაინ საგანმანათლებლო <br />
+            პრაქტიკულ კურსებს სხვადასხვა ICT მიმართულებით. <br />
+            წარმატებულ კურსდამთავრებულებს ეძლევათ შესაძლებლობა <br />
+            დასაქმდნენ თიბისისა და მის პარტნიორ კომპანიებში.
+          </article>
+          <a href="#" class="learn-more">გაიგე მეტი</a>
+        </div>
+      </section>
+      <section class="course-content">
+        <div class="course-content-header">
+          <span class="course-list"> სასწავლო კურსები </span>
+        </div>
+        <div class="course-div">
+          <div id="components-container"></div>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="static.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

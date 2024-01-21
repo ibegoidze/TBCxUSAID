@@ -1,0 +1,62 @@
+.main-header {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(26, 30, 31, 1);
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.5s;
+}
+
+.header-transparent {
+  background-color: rgba(26, 30, 31, 0.95);
+}
+
+.main-header .header-content {
+  width: 74%;
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 10px 0;
+}
+
+.geo-lang {
+  font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+.main-header .header-logo img {
+  width: auto;
+  height: 55px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.main-header .navigation-bar {
+  display: flex;
+}
+
+.main-header .navigation-bar li {
+  display: flex;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  margin: 0 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.main-header .navigation-bar li:hover,
+.main-header .navigation-bar li.active-page {
+  color: #01a1dc;
+}
+
+@media only screen and (min-width: 1500px) {
+  .main-header .header-content {
+    width: 56%;
+  }
+}
