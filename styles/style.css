@@ -10,3 +10,12 @@ html {
   display: flex;
   flex-direction: column;
 }
+
+:root {
+  --background-color-dark: #161616;
+  --background-color-light: #2b2b2b;
+  --tbc-blue: #00aef0;
+  --hover-gray: rgb(172, 166, 166);
+  --geo-lang: 'Noto Sans Georgian', sans-serif;
+  --en-lang: sans-serif;
+}

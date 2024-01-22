@@ -1,24 +1,27 @@
 .course-content {
-  background-color: rgb(22, 22, 22);
+  background-color: var(--background-color-dark);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+/* HEADING სასწავლო კურსები */
 .course-content-header {
-  color: #dbdbd2;
+  color: #ebebe4;
   width: 70%;
   font-size: 23px;
-  font-family: 'Noto Sans Georgian', sans-serif;
+  font-family: var(--geo-lang);
   margin: 40px 0;
 }
 
+/* PARENT OF ALL COURSES  */
 .course-div {
   width: 72%;
   margin-bottom: 60px;
 }
 
+/* RENDERING EACH COURSE */
 #components-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -26,6 +29,7 @@
   grid-column-gap: 40px;
 }
 
+/* SINGLE COURSE written in JS */
 .single-component {
   border: 1px solid #454545;
   border-radius: 7px;
@@ -38,7 +42,8 @@
 }
 
 .single-component span {
-  font-family: 'Noto Sans Georgian', sans-serif;
+  margin: 0 20px;
+  font-family: var(--geo-lang);
   font-size: 14px;
   color: #cdcdcd;
 }
@@ -46,22 +51,23 @@
 .course-heading {
   color: #e2e2e2;
   margin: 30px 20px;
-  font-family: sans-serif;
+  font-family: var(--geo-lang);
   font-weight: 200;
 }
 
+/* DIV CONTAINING ARROW AND კურსის დეტალები written in JS */
 .svg-span {
   display: flex;
   margin: 70px 0 20px 20px;
   align-items: center;
-  color: #00aef3;
+  color: var(--tbc-blue);
 }
 
 .svg-span span {
-  color: #00aef3;
+  color: var(--tbc-blue);
   margin: 15px 10px;
   font-size: 16px;
-  font-family: 'Noto Sans Georgian', sans-serif;
+  font-family: var(--geo-lang);
   font-weight: 500;
   cursor: pointer;
 }
@@ -71,6 +77,7 @@
   cursor: pointer;
 }
 
+/* RESPONSIVE */
 @media only screen and (min-width: 1500px) {
   .course-div {
     width: 56%;

@@ -1,0 +1,98 @@
+/* SECTION COMPONENT  */
+.main-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color-light);
+  padding-bottom: 50px;
+}
+
+/* HEADING */
+.partner-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 72%;
+  color: rgb(243, 243, 243);
+  font-family: var(--geo-lang);
+  font-size: 25px;
+  padding: 40px 0;
+}
+
+/* SLIDER ARROWS AND DOTS */
+.slider-container {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-color-light);
+  padding-top: 50px;
+}
+
+/* SLIDER PAGES */
+.slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* IMAGES PARENT */
+.slide-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  gap: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* ACTIVE PAGE */
+.slide-content.active {
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  gap: 10%;
+  opacity: 1;
+}
+
+/* SINGLE IMAGE */
+.slide-content img {
+  width: 23%;
+  height: auto;
+  min-width: 200px;
+}
+
+/* ARROWS */
+.slider-arrow {
+  color: #e6e4e4;
+  font-size: 80px;
+  cursor: pointer;
+}
+.slider-arrow:hover {
+  color: var(--hover-gray);
+}
+
+/* DOTS */
+.dot {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (min-width: 1500px) {
+  .partner-container {
+    width: 56%;
+  }
+  .slider-container {
+    width: 64%;
+  }
+  /* the arrows go wider on bigger screen need to change that */
+}

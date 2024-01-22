@@ -9,15 +9,21 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0"
+    />
     <title>TBC x USAID</title>
     <link rel="stylesheet" href="/styles/style.css" />
     <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/banner.css" />
     <link rel="stylesheet" href="/styles/programDescription.css" />
     <link rel="stylesheet" href="/styles/courseContent.css" />
+    <link rel="stylesheet" href="/styles/slider.css" />
   </head>
   <body>
     <div class="web-content">
+      <!-- HEADER -->
       <header class="main-header">
         <div class="header-content">
           <div class="header-logo">
@@ -33,6 +39,7 @@
           </nav>
         </div>
       </header>
+      <!-- BANNER -->
       <section class="main-banner">
         <div class="banner-content">
           <h1 class="banner-heading">TBC x USAID</h1>
@@ -41,19 +48,21 @@
           </h2>
         </div>
       </section>
+      <!-- PROGRAM COMPONENT -->
       <section class="main-program-description">
         <div class="program-description-content">
           <article class="program-description-text">
-            „ TBC x USAID - ტექნოლოგიური განათლებისთვის “ პროგრამა<br />
-            საინფორმაციო ტექნოლოგიებით დაინტერესებულ ადამიანებს <br />
-            გთავაზობთ სრულად დაფინანსებულ ონლაინ საგანმანათლებლო <br />
-            პრაქტიკულ კურსებს სხვადასხვა ICT მიმართულებით. <br />
-            წარმატებულ კურსდამთავრებულებს ეძლევათ შესაძლებლობა <br />
+            <div>„ TBC x USAID - ტექნოლოგიური განათლებისთვის “ პროგრამა</div>
+            <div>საინფორმაციო ტექნოლოგიებით დაინტერესებულ ადამიანებს</div>
+            <div>გთავაზობთ სრულად დაფინანსებულ ონლაინ საგანმანათლებლო</div>
+            <div>პრაქტიკულ კურსებს სხვადასხვა ICT მიმართულებით.</div>
+            <div>წარმატებულ კურსდამთავრებულებს ეძლევათ შესაძლებლობა</div>
             დასაქმდნენ თიბისისა და მის პარტნიორ კომპანიებში.
           </article>
           <a href="#" class="learn-more">გაიგე მეტი</a>
         </div>
       </section>
+      <!-- COURSE COMPONENT -->
       <section class="course-content">
         <div class="course-content-header">
           <span class="course-list"> სასწავლო კურსები </span>
@@ -62,8 +71,46 @@
           <div id="components-container"></div>
         </div>
       </section>
+      <!-- SLIDER COMPONENT -->
+      <section class="main-slider">
+        <div class="partner-container">
+          <div class="partner-header">პროექტის პარტნიორები</div>
+        </div>
+        <div class="slider-container">
+          <span class="material-symbols-outlined previous-slide slider-arrow">
+            navigate_before
+          </span>
+          <div class="slider">
+            <div class="slide-content">
+              <img src="/assets/sliderImages/usaId.webp" alt="USAID logo" />
+              <img
+                src="/assets/sliderImages/spaceInt.webp"
+                alt="Space int logo"
+              />
+              <img src="/assets/sliderImages/tnet.webp" alt="tnet logo" />
+            </div>
+            <div class="slide-content">
+              <img src="/assets/sliderImages/tegeta.webp" alt="tegeta logo" />
+              <img src="/assets/sliderImages/spectre.webp" alt="spectre logo" />
+              <img src="/assets/sliderImages/tbcLiz.webp" alt="lising logo" />
+            </div>
+            <div class="slide-content">
+              <img src="/assets/sliderImages/ufc.webp" alt="ufc logo" />
+            </div>
+          </div>
+          <span class="material-symbols-outlined next-slide slider-arrow">
+            navigate_next
+          </span>
+        </div>
+        <div class="slide-nav-dots">
+          <span class="dot active">.</span>
+          <span class="dot">.</span>
+          <span class="dot">.</span>
+        </div>
+      </section>
     </div>
-    <script type="module" src="static.js"></script>
-    <script type="module" src="index.js"></script>
+    <script type="module" src="/JS/static.js"></script>
+    <script type="module" src="/JS/slider.js"></script>
+    <script type="module" src="/JS/index.js"></script>
   </body>
 </html>
