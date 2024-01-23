@@ -1,0 +1,108 @@
+/* FOOTER COMPONENT */
+.main-footer {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1a1e1f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTENT DIV */
+.footer {
+  width: 78%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+/* LEFT SIDE DIV OF FOOTER */
+.footer-left-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo img {
+  width: 110px;
+  margin-bottom: 20px;
+}
+
+.footer-left-side span {
+  margin: 10px 0;
+  font-size: 14px;
+  font-family: var(--geo-lang);
+}
+
+/* RIGHT SIDE DIV OF FOOTER */
+.footer-right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer-social {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-social img {
+  width: 35px;
+  margin: 0 5px;
+}
+
+.footer-button {
+  background-color: var(--tbc-blue);
+  color: #fff;
+  border: none;
+  padding: 9px 32px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  font-size: 16px;
+  font-family: var(--geo-lang);
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+.footer-button:hover {
+  background-color: rgb(219, 215, 215);
+  color: black;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
+
+  .footer-left-side {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-button {
+    margin-bottom: 0;
+  }
+
+  .footer-right-side {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
+  }
+}
+
+/* RESPONSIVE */
+@media only screen and (min-width: 1500px) {
+  .footer {
+    width: 56%;
+  }
+}
