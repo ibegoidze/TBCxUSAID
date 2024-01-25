@@ -11,39 +11,29 @@
 /* CONTENT CONTAINER */
 .program-description-content {
   width: 72%;
-  margin: 55px 0;
+  margin: 5.5rem 0;
 }
 
 /* MAIN TEXT */
 .program-description-text {
   color: #f4f4f4;
   font-family: var(--geo-lang);
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.8;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 /* LEARN MORE LINK */
 .learn-more {
   color: var(--tbc-blue);
   cursor: pointer;
-  font-size: 20px;
+  font-size: 2rem;
   font-family: var(--geo-lang);
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
 }
 
 .learn-more:hover {
   color: var(--hover-gray);
-}
-
-/* RESPONSIVE */
-@media only screen and (min-width: 1500px) {
-  .program-description-content {
-    width: 55%;
-  }
-  .program-description-text {
-    font-size: 28px;
-  }
 }

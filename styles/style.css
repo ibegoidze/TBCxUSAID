@@ -4,6 +4,7 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 .web-content {
@@ -18,4 +19,16 @@ html {
   --hover-gray: rgb(172, 166, 166);
   --geo-lang: 'Noto Sans Georgian', sans-serif;
   --en-lang: sans-serif;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 9.5px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 9px;
+  }
 }

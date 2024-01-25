@@ -10,23 +10,23 @@
 .course-content-header {
   color: #ebebe4;
   width: 70%;
-  font-size: 23px;
+  font-size: 2.3rem;
   font-family: var(--geo-lang);
-  margin: 40px 0;
+  margin: 4rem 0;
 }
 
 /* PARENT OF ALL COURSES  */
 .course-div {
   width: 72%;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 
 /* RENDERING EACH COURSE */
 #components-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 20px;
-  grid-column-gap: 40px;
+  grid-row-gap: 2rem;
+  grid-column-gap: 4rem;
 }
 
 /* SINGLE COURSE written in JS */
@@ -42,15 +42,16 @@
 }
 
 .single-component span {
-  margin: 0 20px;
+  margin: 0 2rem;
   font-family: var(--geo-lang);
-  font-size: 14px;
-  color: #cdcdcd;
+  font-size: 1.4rem;
+  color: white;
 }
 
 .course-heading {
   color: #e2e2e2;
-  margin: 30px 20px;
+  margin: 3rem 2rem;
+  font-size: 1.8rem;
   font-family: var(--geo-lang);
   font-weight: 200;
 }
@@ -58,15 +59,15 @@
 /* DIV CONTAINING ARROW AND კურსის დეტალები written in JS */
 .svg-span {
   display: flex;
-  margin: 70px 0 20px 20px;
+  margin: 7rem 0 2rem 2rem;
   align-items: center;
   color: var(--tbc-blue);
 }
 
 .svg-span span {
   color: var(--tbc-blue);
-  margin: 15px 10px;
-  font-size: 16px;
+  margin: 1.5rem 1rem;
+  font-size: 1.6rem;
   font-family: var(--geo-lang);
   font-weight: 500;
   cursor: pointer;
@@ -75,14 +76,4 @@
 .svg-span svg {
   fill: #00aef3;
   cursor: pointer;
-}
-
-/* RESPONSIVE */
-@media only screen and (min-width: 1500px) {
-  .course-div {
-    width: 56%;
-  }
-  .course-content-header {
-    width: 56%;
-  }
 }

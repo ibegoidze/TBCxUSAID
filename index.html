@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/styles/slider.css" />
     <link rel="stylesheet" href="/styles/faq.css" />
     <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/queries.css">
   </head>
   <body>
     <div class="web-content">
@@ -31,7 +32,7 @@
           <div class="header-logo">
             <img src="/assets/images/TBClogo.png" alt="Logo" />
           </div>
-          <nav>
+          <nav class="desktop-navigation">
             <ul class="navigation-bar">
               <li class="geo-lang">მთავარი</li>
               <li>TBC IT</li>
@@ -39,6 +40,24 @@
               <li class="geo-lang">რისკები</li>
             </ul>
           </nav>
+          <div class="burger-menu" id="burgerMenu">
+            <span class="material-symbols-outlined">menu </span>
+         </div>
+         <div class="off-canvas-menu" id="offCanvasMenu">
+            <div class="close-icon" id="closeIcon">
+              <span class="material-symbols-outlined">
+                close
+                </span>
+            </div>
+            <nav class="mobile-navigation">
+                <ul class="mobile-navigation-bar">
+                    <li class="geo-lang">მთავარი</li>
+                    <li>TBC IT</li>
+                    <li class="active-page">TBC x USAID</li>
+                    <li class="geo-lang">რისკები</li>
+                </ul>
+            </nav>
+        </div>
         </div>
       </header>
       <!-- BANNER -->
@@ -118,16 +137,17 @@
             <span>ყველა კითხვა</span>
           </div>
           <div class="faq-body"></div> 
+          <span class="mob-all-questions">ყველა კითხვა</span>
       <!-- FOOTER -->
       </section>
       <footer class="main-footer">
         <div class="footer">
           <div class="footer-left-side">
             <div class="footer-logo">
-              <img src="/assets/images/TBC-footer.webp" alt="TBC logo" />
+              <img class="desk-img" src="/assets/images/TBC-footer.webp" alt="TBC logo" />
             </div>
             <span>© 2023 ყველა უფლება დაცულია</span>
-            <span>ჩვენ და პარტნიორები</span>
+            <span>წესები და პირობები</span>
           </div>
           <div class="footer-right-side">
             <div class="footer-social">
@@ -136,9 +156,11 @@
             </div>
             <button class="footer-button">მოგვწერეთ</button>
           </div>
+          <img class="mob-img" src="/assets/images/TBC-footer.webp" alt="TBC logo" />
         </div>
       </footer>
     </div>
+    <script type="module" src="/JS/burgerMenu.js"></script>
     <script type="module" src="/JS/static.js"></script>
     <script type="module" src="/JS/slider.js"></script>
     <script type="module" src="/JS/faq.js"></script>

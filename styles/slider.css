@@ -15,8 +15,8 @@
   width: 72%;
   color: rgb(243, 243, 243);
   font-family: var(--geo-lang);
-  font-size: 25px;
-  padding: 40px 0;
+  font-size: 2.5rem;
+  padding: 4rem 0;
 }
 
 /* SLIDER ARROWS AND DOTS */
@@ -25,7 +25,7 @@
   display: flex;
   justify-content: center;
   background-color: var(--background-color-light);
-  padding-top: 50px;
+  padding-top: 5rem;
 }
 
 /* SLIDER PAGES */
@@ -43,7 +43,7 @@
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  gap: 10%;
+  gap: 40;
   position: absolute;
   top: 0;
   left: 0;
@@ -65,13 +65,13 @@
 .slide-content img {
   width: 23%;
   height: auto;
-  min-width: 200px;
+  min-width: 20rem;
 }
 
 /* ARROWS */
 .slider-arrow {
   color: #e6e4e4;
-  font-size: 80px;
+  font-size: 8rem;
   cursor: pointer;
 }
 .slider-arrow:hover {
@@ -81,7 +81,7 @@
 /* DOTS */
 .dot {
   color: white;
-  font-size: 50px;
+  font-size: 5rem;
   cursor: pointer;
 }
 

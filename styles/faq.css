@@ -9,7 +9,7 @@
 /* CONTENT DIV */
 .faq-content {
   width: 72%;
-  padding: 80px 0;
+  padding: 8rem 0;
 }
 
 /* HEADER */
@@ -21,7 +21,7 @@
 
 .faq-header h2 {
   color: white;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-family: var(--geo-lang);
   font-weight: 200;
   letter-spacing: 0.3px;
@@ -30,9 +30,18 @@
 .faq-header span {
   color: var(--tbc-blue);
   font-family: var(--geo-lang);
-  font-size: 19px;
+  font-size: 1.9rem;
   font-weight: 500;
   cursor: pointer;
+}
+
+.mob-all-questions {
+  color: var(--tbc-blue);
+  font-family: var(--geo-lang);
+  font-size: 1.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: none;
 }
 
 .faq-header span:hover {
@@ -70,10 +79,10 @@
 /* QUESTION */
 .faq-item .question {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
   width: 97%;
   cursor: pointer;
-  padding: 25px 0;
+  padding: 2.5rem 0;
   font-family: var(--geo-lang);
   font-weight: 500;
   flex-wrap: wrap;
@@ -82,24 +91,17 @@
 
 /* ARROW */
 .faq-body span {
-  font-size: 20px;
+  font-size: 2rem;
   cursor: pointer;
   width: 3%;
 }
 
 /* ANSWER */
 .answer {
-  padding: 20px 0;
-  font-size: 14px;
+  padding: 2rem 0;
+  font-size: 1.4rem;
   letter-spacing: 1px;
   font-weight: 200;
   white-space: pre-wrap;
-  line-height: 24px;
-}
-
-/* RESPONSIVE */
-@media only screen and (min-width: 1500px) {
-  .faq-content {
-    width: 53%;
-  }
+  line-height: 2.4rem;
 }

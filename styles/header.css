@@ -22,17 +22,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
+  font-size: 1.4rem;
   letter-spacing: 0.5px;
-  padding: 10px 0;
+  padding: 1rem 0;
 }
 
 /* ACADEMY LOGO */
 .header-logo img {
   width: auto;
-  height: 55px;
+  height: 5.5rem;
   cursor: pointer;
-  padding: 5px;
+  padding: 0.5px;
 }
 
 /* NAVIGATION */
@@ -62,9 +62,60 @@
   color: var(--tbc-blue);
 }
 
-/* RESPONSIVE */
-@media only screen and (min-width: 1500px) {
-  .main-header .header-content {
-    width: 56%;
-  }
+/* BURGER MENU */
+/* Burger Menu Icon */
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  color: white;
 }
+.burger-menu span {
+  font-size: 7rem;
+}
+
+/* Off-Canvas Menu */
+.off-canvas-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 65%;
+  background: #222222;
+  z-index: 1100;
+  transition: right 0.5s;
+}
+
+/* Mobile Navigation */
+.mobile-navigation-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+.mobile-navigation-bar li {
+  margin: 2.2rem 3rem;
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-navigation-bar li.active-page {
+  color: var(--tbc-blue);
+}
+
+.close-icon {
+  display: flex;
+  justify-content: flex-end;
+  margin: 3rem 4rem 4rem 0;
+}
+
+.close-icon span {
+  font-weight: 800;
+  font-size: 6rem;
+  color: var(--hover-gray);
+}
+
+/*  */
