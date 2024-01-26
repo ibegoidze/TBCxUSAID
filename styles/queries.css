@@ -1,7 +1,7 @@
 /* RESPONSIVE */
 
 /* BIG DESKTOP */
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
   .header-content,
   .banner-heading,
   .program-description-content,
@@ -15,6 +15,12 @@
   }
   .main-banner {
     background-size: 100% 100%;
+  }
+  .partner-container {
+    width: 56%;
+  }
+  .slider-container {
+    width: 64%;
   }
 }
 
@@ -47,14 +53,13 @@
 }
 
 /* MOBILE */
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   /* WIDTH OF MAIN COMPONENTS */
   .header-content,
   .course-div,
   .course-content-header,
   .program-description-content,
   .banner-heading {
-    /* 74 */
     width: 88%;
   }
   .footer {
@@ -63,9 +68,24 @@
   .faq-content {
     width: 85%;
   }
+
   /* HEADER */
+  .burger-menu {
+    display: block;
+  }
+  .desktop-navigation {
+    display: none;
+  }
   .main-header {
     position: static;
+    transition: top 0.3s;
+  }
+  .header-hidden {
+    top: -100%;
+  }
+  .main-header:not(.header-hidden) {
+    position: sticky;
+    top: 0;
   }
   .header-content {
     padding: 2rem 0;
@@ -83,6 +103,15 @@
   .banner-geo-lang {
     margin-top: 0;
   }
+
+  /* PROGRAM DESCRIPTION */
+  .program-description-text {
+    font-size: 2.2rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5rem;
+  }
+
   /* COURSE CONTENT */
   #components-container {
     grid-template-columns: 1fr;
@@ -99,18 +128,14 @@
   .svg-span {
     margin: 2rem 0 2rem 2rem;
   }
+
   /* SLIDER */
-  .main-slider {
-    /* background-color: red; */
-  }
-  .slide-container {
-  }
   .slide-content {
     flex-direction: column;
     justify-content: space-between;
   }
   .slider {
-    height: 30vh;
+    height: 50vh;
   }
   .slide-content img {
     pad: 50px 0;
@@ -119,6 +144,7 @@
   .slider-arrow {
     display: none;
   }
+
   /* FAQ */
   .faq-header h2 {
     font-size: 2.8rem;
@@ -127,12 +153,17 @@
     font-size: 2.2rem;
   }
   .answer {
-    font-size: 2rem;
+    font-size: 4vw;
     font-weight: 300;
-    line-height: 4rem;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+    width: 100%;
   }
   .faq-header span {
     display: none;
+  }
+  .faq-item {
+    width: 100%;
   }
   .mob-all-questions {
     display: block;
@@ -144,6 +175,7 @@
     font-size: 2.3rem;
     font-weight: 500;
   }
+
   /* FOOTER */
   .footer {
     align-items: baseline;
@@ -180,7 +212,6 @@
   }
   .mob-img {
     display: block;
-    /* margin-bottom: 1rem; */
   }
   .footer-button {
     font-size: 2rem;
@@ -194,10 +225,16 @@
   .footer-social {
     align-items: center;
   }
-  /*  */
-  .program-description-text {
-    font-size: 2.2rem;
-    margin: 0;
-    padding: 0;
+}
+
+/* FAQ ANSWER TEXT */
+@media (max-width: 900px) {
+  .answer {
+    font-size: 3vw;
+    font-weight: 300;
+    line-height: 4rem;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+    width: 100%;
   }
 }

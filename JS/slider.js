@@ -18,18 +18,15 @@ const updateSlides = () => {
   });
   dots[currentSlide].classList.add('active');
 };
-
 // NAVIGATE THROUGH SLIDE PAGES WITH ARROW ICONS
 nextButton.addEventListener('click', () => {
   currentSlide = (currentSlide + 1) % slides.length;
   updateSlides();
 });
-
 prevButton.addEventListener('click', () => {
   currentSlide = (currentSlide - 1 + slides.length) % slides.length;
   updateSlides();
 });
-
 // NAVIGATE WITH DOTS
 dots.forEach((dot, index) => {
   dot.addEventListener('click', () => {
@@ -37,11 +34,9 @@ dots.forEach((dot, index) => {
     updateSlides();
   });
 });
-
 // UPDATING SLIDE PAGE EVERY 3 SEONDS
 setInterval(() => {
   currentSlide = (currentSlide + 1) % slides.length;
   updateSlides();
 }, 3000);
-
 updateSlides();

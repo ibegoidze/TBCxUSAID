@@ -1,6 +1,7 @@
 /* SECTION COMPONENT */
 .main-banner {
   width: 100%;
+  /* max-width: 100rem; */
   background-image: url('/assets/images/cover.PNG');
   background-size: cover;
   background-position: center;

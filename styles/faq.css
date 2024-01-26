@@ -104,4 +104,7 @@
   font-weight: 200;
   white-space: pre-wrap;
   line-height: 2.4rem;
+  text-wrap: nowrap;
+  color: white;
+  width: 3vw;
 }

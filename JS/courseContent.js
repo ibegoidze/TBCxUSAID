@@ -1,12 +1,6 @@
 import courseData from './static.js';
 
-const header = document.querySelector('.main-header');
 const container = document.getElementById('components-container');
-
-// MAKE HEADER TRANSPARENT ON SCROLLING
-window.addEventListener('scroll', () => {
-  header.classList.toggle('header-transparent', window.scrollY > 30);
-});
 
 // CREATING COMPONENT HTML
 const createComponent = (imgSrc, courseName) => {

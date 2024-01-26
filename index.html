@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0"
     />
     <title>TBC x USAID</title>
+    <link rel="icon" href="/assets/icons/tbc.png" type="image/x-icon" />
     <link rel="stylesheet" href="/styles/style.css" />
     <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/banner.css" />
@@ -21,8 +22,8 @@
     <link rel="stylesheet" href="/styles/courseContent.css" />
     <link rel="stylesheet" href="/styles/slider.css" />
     <link rel="stylesheet" href="/styles/faq.css" />
-    <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="/styles/queries.css">
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/queries.css" />
   </head>
   <body>
     <div class="web-content">
@@ -40,24 +41,21 @@
               <li class="geo-lang">რისკები</li>
             </ul>
           </nav>
-          <div class="burger-menu" id="burgerMenu">
-            <span class="material-symbols-outlined">menu </span>
-         </div>
-         <div class="off-canvas-menu" id="offCanvasMenu">
-            <div class="close-icon" id="closeIcon">
-              <span class="material-symbols-outlined">
-                close
-                </span>
-            </div>
+          <div class="burger-menu burgerMenu">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+          </div>
+          <div class="off-canvas-menu burger-layout">
             <nav class="mobile-navigation">
-                <ul class="mobile-navigation-bar">
-                    <li class="geo-lang">მთავარი</li>
-                    <li>TBC IT</li>
-                    <li class="active-page">TBC x USAID</li>
-                    <li class="geo-lang">რისკები</li>
-                </ul>
+              <ul class="mobile-navigation-bar">
+                <li class="geo-lang">მთავარი</li>
+                <li>TBC IT</li>
+                <li class="active-page">TBC x USAID</li>
+                <li class="geo-lang">რისკები</li>
+              </ul>
             </nav>
-        </div>
+          </div>
         </div>
       </header>
       <!-- BANNER -->
@@ -119,9 +117,9 @@
               <img src="/assets/sliderImages/ufc.webp" alt="ufc logo" />
             </div>
           </div>
-          <span class="material-symbols-outlined next-slide slider-arrow">
-            navigate_next
-          </span>
+          <span class="material-symbols-outlined next-slide slider-arrow"
+            >navigate_next</span
+          >
         </div>
         <div class="slide-nav-dots">
           <span class="dot active">.</span>
@@ -136,15 +134,20 @@
             <h2>ხშირად დასმული კითხვები</h2>
             <span>ყველა კითხვა</span>
           </div>
-          <div class="faq-body"></div> 
+          <div class="faq-body"></div>
           <span class="mob-all-questions">ყველა კითხვა</span>
-      <!-- FOOTER -->
+        </div>
       </section>
+      <!-- FOOTER -->
       <footer class="main-footer">
         <div class="footer">
           <div class="footer-left-side">
             <div class="footer-logo">
-              <img class="desk-img" src="/assets/images/TBC-footer.webp" alt="TBC logo" />
+              <img
+                class="desk-img"
+                src="/assets/images/TBC-footer.webp"
+                alt="TBC logo"
+              />
             </div>
             <span>© 2023 ყველა უფლება დაცულია</span>
             <span>წესები და პირობები</span>
@@ -156,14 +159,18 @@
             </div>
             <button class="footer-button">მოგვწერეთ</button>
           </div>
-          <img class="mob-img" src="/assets/images/TBC-footer.webp" alt="TBC logo" />
+          <img
+            class="mob-img"
+            src="/assets/images/TBC-footer.webp"
+            alt="TBC logo"
+          />
         </div>
       </footer>
     </div>
-    <script type="module" src="/JS/burgerMenu.js"></script>
+    <script type="module" src="/JS/courseContent.js"></script>
+    <script type="module" src="/JS/header.js"></script>
     <script type="module" src="/JS/static.js"></script>
     <script type="module" src="/JS/slider.js"></script>
     <script type="module" src="/JS/faq.js"></script>
-    <script type="module" src="/JS/index.js"></script>
   </body>
 </html>

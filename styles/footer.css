@@ -62,10 +62,6 @@
   margin: 0 0.5rem;
 }
 
-.mob-img {
-  display: none;
-}
-
 .footer-button {
   background-color: var(--tbc-blue);
   color: #fff;
@@ -84,28 +80,7 @@
   color: black;
 }
 
-/* RESPONSIVE */
-/* @media (min-width: 768px) {
-  .footer {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .footer-left-side {
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .footer-button {
-    margin-bottom: 0;
-  }
-
-  .footer-right-side {
-    display: flex;
-    align-items: center;
-  }
-
-  .footer-social {
-    margin-bottom: 0;
-  }
-} */
+/* DISSAPEARS ON MOBILE RESPONSIVE  */
+.mob-img {
+  display: none;
+}

@@ -84,15 +84,3 @@
   font-size: 5rem;
   cursor: pointer;
 }
-
-/* RESPONSIVE */
-
-@media only screen and (min-width: 1500px) {
-  .partner-container {
-    width: 56%;
-  }
-  .slider-container {
-    width: 64%;
-  }
-  /* the arrows go wider on bigger screen need to change that */
-}

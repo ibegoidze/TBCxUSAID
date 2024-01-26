@@ -25,6 +25,7 @@
   font-size: 1.4rem;
   letter-spacing: 0.5px;
   padding: 1rem 0;
+  position: relative;
 }
 
 /* ACADEMY LOGO */
@@ -63,17 +64,47 @@
 }
 
 /* BURGER MENU */
-/* Burger Menu Icon */
 .burger-menu {
   display: none;
   cursor: pointer;
   color: white;
-}
-.burger-menu span {
-  font-size: 7rem;
+  position: absolute;
+  top: 3.5rem;
+  right: 2rem;
+  z-index: 1101;
 }
 
-/* Off-Canvas Menu */
+/* APPLIES TO ALL THE ELEMENTS ON CLICK ON BURGER MENU */
+.blur-effect {
+  filter: brightness(60%);
+}
+
+.burger-icon {
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: var(--hover-gray);
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* TRANSFORMING BURGER ICON TO CLOSE ICON */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* LAYOUT MENU */
 .off-canvas-menu {
   position: fixed;
   top: 0;
@@ -83,9 +114,10 @@
   background: #222222;
   z-index: 1100;
   transition: right 0.5s;
+  padding-top: 14rem;
 }
 
-/* Mobile Navigation */
+/* LAYOUT UL */
 .mobile-navigation-bar {
   display: flex;
   flex-direction: column;
@@ -118,4 +150,7 @@
   color: var(--hover-gray);
 }
 
-/*  */
+/* NO SCROLL WHEN BURGER MENU LAYOUT IS OPEN */
+.no-scroll {
+  overflow: hidden;
+}
