@@ -22,6 +22,9 @@
   .slider-container {
     width: 64%;
   }
+  .program-description-text {
+    font-size: 1.5vw;
+  }
 }
 
 /* LAPTOP */
@@ -49,6 +52,9 @@
   }
   .faq-content {
     width: 90%;
+  }
+  .program-description-text {
+    font-size: 2.7vw;
   }
 }
 
@@ -106,7 +112,7 @@
 
   /* PROGRAM DESCRIPTION */
   .program-description-text {
-    font-size: 2.2rem;
+    font-size: 4vw;
     margin: 0;
     padding: 0;
     margin-bottom: 5rem;
@@ -131,11 +137,14 @@
 
   /* SLIDER */
   .slide-content {
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(100%);
     flex-direction: column;
     justify-content: space-between;
+    position: absolute;
   }
   .slider {
-    height: 50vh;
+    height: 60vh;
   }
   .slide-content img {
     pad: 50px 0;
@@ -144,7 +153,24 @@
   .slider-arrow {
     display: none;
   }
-
+  .dot {
+    font-size: 15rem;
+  }
+  .slide-content.mobile-view {
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(100%);
+  }
+  .slide-content.active.mobile-view {
+    transform: translateX(0);
+  }
+  .slide-content:not(.active).mobile-view {
+    transform: translateX(-100%);
+  }
+  .partner-container {
+    width: 80%;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
   /* FAQ */
   .faq-header h2 {
     font-size: 2.8rem;
@@ -153,7 +179,7 @@
     font-size: 2.2rem;
   }
   .answer {
-    font-size: 4vw;
+    font-size: 50vw;
     font-weight: 300;
     text-wrap: wrap;
     overflow-wrap: break-word;
@@ -164,6 +190,9 @@
   }
   .faq-item {
     width: 100%;
+  }
+  .faq-item .answer {
+    font-size: 4vw;
   }
   .mob-all-questions {
     display: block;

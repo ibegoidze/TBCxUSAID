@@ -16,9 +16,11 @@
 
 /* MAIN TEXT */
 .program-description-text {
+  max-width: 100%;
+  margin: 0 auto;
   color: #f4f4f4;
   font-family: var(--geo-lang);
-  font-size: 2.5rem;
+  font-size: 2vw;
   font-weight: 300;
   line-height: 1.8;
   margin-bottom: 4rem;

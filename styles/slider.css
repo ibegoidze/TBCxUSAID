@@ -26,6 +26,8 @@
   justify-content: center;
   background-color: var(--background-color-light);
   padding-top: 5rem;
+
+  overflow: hidden;
 }
 
 /* SLIDER PAGES */
@@ -50,6 +52,8 @@
   width: 100%;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* ACTIVE PAGE */
@@ -83,4 +87,11 @@
   color: white;
   font-size: 5rem;
   cursor: pointer;
+}
+
+.slide-content {
+  transition: opacity 0.5s ease-in-out;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
 }
