@@ -17,7 +17,16 @@
 
 ## INSTALLATION
 
-Instructions to clone and run the project locally.
+- GitHub
+  დაკლონეთ ან ჩამოტვირთეთ TBCxUSAID რეპოზიტორია
+  დააექსტრაქტეთ ჩამოტვირთული ზიპ ფოლდერი
+  გახსენით ფაილი code editor_ში
+
+- Netlify
+  https://tbc-it-academy.netlify.app
+
+- Vercel
+  https://tbcxusaid.vercel.app/
 
 ## Author
 
