@@ -93,7 +93,6 @@
 .faq-body span {
   font-size: 2rem;
   cursor: pointer;
-  width: 3%;
 }
 
 /* ANSWER */
@@ -107,4 +106,8 @@
   text-wrap: nowrap;
   color: white;
   width: 3vw;
+}
+
+.rotate-arrow {
+  transform: rotate(180deg);
 }

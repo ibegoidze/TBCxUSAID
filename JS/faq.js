@@ -25,8 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
     answer.style.display = 'none';
     // TOGGLE ANSWER DIV
     questionIconContainer.addEventListener('click', () => {
-      answer.style.display =
-        answer.style.display === 'block' ? 'none' : 'block';
+      const isExpanded = answer.style.display === 'block';
+      answer.style.display = isExpanded ? 'none' : 'block';
+      expandIcon.classList.toggle('rotate-arrow');
     });
     // PLACING CREATED ELEMENTS
     faqSection.appendChild(faqItem);
