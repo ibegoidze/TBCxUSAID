@@ -7,6 +7,8 @@
 3. styles ფოლდერი - შედგება 9 css ფაილისგან თითოეული კომპონენტის დიზაინისთვის +queries.css რესპონსივისთვის.
 4. assets ფოლდერი - მოიცავს icons, images, sliderImages ფოლდერებს.
    .prettier კონფიგურაცია
+   [Blue Green Work Breakdown Structure Graph.pdf](https://github.com/ibegoidze/TBCxUSAID/files/14076602/Blue.Green.Work.Breakdown.Structure.Graph.pdf)
+
 
 ## TECHNOLOGIES USED
 
