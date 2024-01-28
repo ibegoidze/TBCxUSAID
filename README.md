@@ -9,30 +9,13 @@
    .prettier კონფიგურაცია
 
 project-root
-|
-|-- assets
-|   |-- icons
-|   |-- images
-|   `-- sliderImages
-|-- JS
-|   |-- courseContent.js
-|   |-- faq.js
-|   |-- header.js
-|   |-- slider.js
-|   `-- static.js
-`-- styles
-    |-- banner.css
-    |-- courseContent.css
-    |-- faq.css
-    |-- footer.css
-    |-- header.css
-    |-- programDescription.css
-    |-- queries.css
-    |-- slider.css
-    `-- style.css
-|-- .prettierrc
-|-- index.html
-`-- README.md
+
+- |-- assets |   |-- icons |-- images |-- sliderImages
+- |-- JS |   |-- courseContent.js |-- faq.js |-- header.js |-- slider.js |-- static.js
+- |-- styles  |   |-- header.css |-- banner.css |-- programDescription.css |-- courseContent.css |-- slider.css |-- faq.css |-- footer.css
+- |-- .prettierrc
+- |-- index.html
+- |-- README.md
 
 
 ## TECHNOLOGIES USED
