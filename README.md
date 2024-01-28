@@ -17,18 +17,12 @@
 
 ## INSTALLATION
 
-- GitHub
-  დაკლონეთ ან ჩამოტვირთეთ TBCxUSAID რეპოზიტორია
-  დააექსტრაქტეთ ჩამოტვირთული ზიპ ფოლდერი
-  გახსენით ფაილი code editor_ში
+- GitHub - დაკლონეთ ან ჩამოტვირთეთ TBCxUSAID რეპოზიტორია, დააექსტრაქტეთ ჩამოტვირთული ზიპ ფოლდერი, გახსენით ფაილი code editor_ში.
 
-- Netlify
-  https://tbc-it-academy.netlify.app
+- Netlify - https://tbc-it-academy.netlify.app
 
-- Vercel
-  https://tbcxusaid.vercel.app/
+- Vercel - https://tbcxusaid.vercel.app/
 
 ## Author
 
-ირაკლი ბეგოიძე
-begobegoidze@gmail.com
+ირაკლი ბეგოიძე - begobegoidze@gmail.com

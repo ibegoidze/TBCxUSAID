@@ -27,18 +27,6 @@
   }
 }
 
-/* LAPTOP */
-@media (max-width: 1200px) {
-  .header-content,
-  .course-div,
-  .course-content-header,
-  .program-description-content,
-  .banner-heading {
-    /* 74 */
-    width: 84%;
-  }
-}
-
 /* TABLET */
 @media (max-width: 1024px) {
   .header-content,
